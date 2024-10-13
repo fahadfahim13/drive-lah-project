@@ -1,0 +1,71 @@
+/* Add these styles to your existing SubscriptionPage.css */
+
+.sidebar {
+    width: 16rem;
+    background-color: #f8f8f8;
+    padding: 1rem;
+  }
+  
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: #333;
+    font-size: 0.9rem;
+  }
+  
+  .sidebar-item.active {
+    color: #20b2aa;
+    font-weight: bold;
+  }
+  
+  .sidebar-item.inactive {
+    color: #bbb;
+  }
+  
+  .sidebar-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%2320b2aa"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .sidebar-active-indicator {
+    width: 0.25rem;
+    height: 1rem;
+    margin-right: 0.75rem;
+    background-color: #20b2aa;
+  }
+  
+  .sidebar-text {
+    flex-grow: 1;
+  }
+  
+  .next-button {
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  .next-button:hover {
+    background-color: #ffc700;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  }
